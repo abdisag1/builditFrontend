@@ -1,0 +1,168 @@
+:root {
+    --primary-color-white: white;
+    --primary-bg-color-light-blue: #599191;
+    --text-color: whitesmoke;
+    --icon-color: whitesmoke;
+    --icon-color-hover: rgb(136, 131, 123);
+    --border-color: var(--icon-color-hover);
+}
+
+body {
+    background: var(--primary-bg-color-light-blue);
+}
+
+.Login {
+
+
+    .header {
+        text-align: center;
+        padding-top: 100px;
+    }
+}
+
+.main-container {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 70%;
+    height: 80vh;
+    padding: 60px;
+    margin-top: 60px;
+    background-color: var(--primary-color-white);
+    color: black;
+    background-image: url('../assets/bg-container.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .login-container {
+        padding-top: 5vh;
+        color: var(--text-color);
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            float: right;
+            border-radius: 10px;
+            width: 25%;
+            padding: 20px;
+            margin-top: 5%;
+            box-shadow: 0 0.3rem 0.3rem var(--border-color);
+            background-color: var(--primary-color-white);
+            color: black;
+        }
+
+        .container-2 {
+            position: relative;
+            border: none;
+            float: right;
+            width: 25%;
+            margin-top: 3%;
+            margin-left: 100%;
+
+            p {
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    span {
+                        color: var(--primary-bg-color-light-blue);
+                        text-align: center;
+                        &:hover {
+                            color: var(--primary-color-white);
+                        }
+                    }
+                    
+                    
+                }
+                
+                
+            }
+        }
+    }
+}
+
+::placeholder {
+    color: rgb(231, 218, 218);
+    text-align: left;
+    font-size: 12px;
+}
+
+.form {
+    p {
+        font-size: 12px;
+        border-bottom: none;
+        margin-left: -20px;
+        margin-right: -20px;
+        box-shadow: 0 0.3rem 0.3rem rgb(238, 232, 232);
+
+
+        h7 {
+            float: right;
+            margin-right: 10px;
+            color: rgb(189, 179, 179);           
+        }
+        h8 {
+            margin-left: 10px;
+            color: orange;
+        }
+    }
+    input {
+        padding-left: 20px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(249, 252, 253);
+        border-radius: 5px;
+        border: none;
+
+
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        color: var(--primary-color-white);
+        background: var(--primary-bg-color-light-blue);
+        display: block;
+        margin: auto;
+        width: 100%;
+        border: none;
+
+        &:hover {
+            background: var(--primary-color-white);
+            color: var(--primary-bg-color-light-blue);
+            border: 1px solid var(--primary-bg-color-light-blue);
+        }
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .main-container {
+
+        .login-container {
+            height: 100vh;
+            padding-top: 5vh;
+            color: var(--text-color);
+
+            .container {
+                display: block;
+                width: 100%;
+                margin: auto;
+            }
+            .container-2 {
+                display: block;
+                width: 100%;
+                margin: auto;
+                margin-top: 3%;
+            }
+        }
+    }
+    .form {
+        p {   
+            font-size: 10px;
+        }
+    }
+
+}
